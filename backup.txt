@@ -1,0 +1,61 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Since June 24, 2024</title>
+    <style>
+        #time-difference {
+            text-align: left;
+            margin-top: 10px;
+            font-size: 27px; /* Font size set to 50px */
+            font-weight: bold;
+            color: #ffff1a; /* Text color set to green */
+            text-shadow: 
+                0px -5px 0 Black,  
+                0px -5px 0 Black,
+                0px  5px 0 Black,
+                0px  5px 0 Black;
+        }
+
+        /* Optional styling for the title */
+        L1 {
+            text-align: left;
+            margin-top: 10px;
+            font-size: 12px; /* Font size set to 50px */
+            font-weight: bold;
+            color: #00ff00; /* Text color set to green */
+            text-shadow: 
+                0px -5px 0 Black,  
+                0px -5px 0 Black,
+                0px  5px 0 Black,
+                0px  5px 0 Black;
+        }
+    </style>
+    <script>
+        function updateTime() {
+            const startDate = new Date("June 24, 2024 00:00:00").getTime();
+            const now = new Date().getTime();
+            const timeDifference = now - startDate;
+
+            const secondsInDay = 86400;
+            const secondsInHour = 3600;
+            const secondsInMinute = 60;
+
+            const days = Math.floor(timeDifference / (secondsInDay * 1000));
+            const hours = Math.floor((timeDifference % (secondsInDay * 1000)) / (secondsInHour * 1000));
+            const minutes = Math.floor((timeDifference % (secondsInHour * 1000)) / (secondsInMinute * 1000));
+            const seconds = Math.floor((timeDifference % (secondsInMinute * 1000)) / 1000);
+
+            document.getElementById("time-difference").innerHTML = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds,`;
+        }
+
+        setInterval(updateTime, 1000);
+    </script>
+</head>
+<body onload="updateTime()">
+    <L1>"එදා ඉදන් දවස් ගණනාවක් එයා බලන් ඉදියා ඔයා මෙතනට ඒවී කියලා. නමුත් දවසින් දවස ඒ හැගීම් බාල්දු වෙද්දීත් ඔයා වෙනුවෙන් තිබුනු මැසේජ් ගණනාවක්, ලිස්ට් පිටින් මකලා දාන මට්ටමට පත් වුණා."
+<br>
+<br>
+"කවදාවත් කිසිම මනුස්සයෙක්ගේ හැගීම් ඒ විදියට බාල්දු වෙන්න වුවමනා නැති වුණත්, එක එහෙම සිද්ද වුණා, "</L1>
+    <div id="time-difference"></div>
+    <dvi class="loader3"></dvi>
+</body>
