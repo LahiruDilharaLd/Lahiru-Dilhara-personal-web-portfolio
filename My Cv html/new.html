@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern CV</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="password-protection.jjs"></script>
+    <link rel="stylesheet" href="new.css">
+    <script src="disable-copy.jjs"></script>
+    <script src="qualification-descriptions.jjs"></script>
+
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-image {
+            width: 200px;
+            height: auto;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        .skill-item, .experience-item, .education-item, .reference-item {
+            margin-bottom: 15px;
+        }
+        .declaration {
+            font-style: italic;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-section">
+        <img src="WhatsApp.jpeg" class="profile-image" alt="Lahiru Dilhara">
+        <T1>Lahiru Dilhara</T1>
+    </div>
+
+    <div class="contact-info">
+        <p> Hey there,,,! Need to connect,,,? Here are the best ways to reach me.</p>
+        <div>
+            <a href="https://wa.link/du5ud4" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.facebook.com/LahiruDilharaLD" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook">
+            </a>
+            <a href="mailto:ldilhare@gmail.com">
+                <img src="https://cdn-icons-png.flaticon.com/24/732/732200.png" alt="Email">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/24/733/733561.png" alt="LinkedIn">
+            </a>
+        </div>
+        
+        
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Personal Details</h2>
+        <p>Date of Birth: 1997-02-15</p>
+        <p>Marital Status: Single</p>
+        <p>Nationality: Sinhala</p>
+        <p>Religion: Buddhism</p>
+        <p>ID Number: 970460780V</p>
+        <p>Phone: 077-9149621, 075-8877009</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skill-item">
+            <h3>Basic Computer and Hardware</h3>
+            <p>Solid foundation in computer hardware skills including troubleshooting, assembling and maintaining computer systems.</p>
+        </div>
+        <div class="skill-item">
+            <h3>Web Design and Development</h3>
+            <p>Strong web design and development skills, creating visually appealing, user-friendly websites. Expert in HTML, CSS and JavaScript.</p>
+        </div>
+        <div class="skill-item">
+            <h3>Design Software</h3>
+            <p>Advanced skills in Photoshop, Illustrator and CorelDRAW for creating stunning graphics, logos and visual designs.</p>
+        </div>
+        <div class="skill-item">
+            <h3>Microsoft Office Pack</h3>
+            <p>Strong proficiency in Word, Excel, PowerPoint, Access, Outlook and OneNote.</p>
+        </div>
+        <div class="skill-item">
+            <h3>Programming</h3>
+            <p>Proficient in HTML, CSS, JavaScript, and Python</p>
+        </div>
+        <div class="skill-item">
+            <h3>Soft Skills</h3>
+            <p>Creativity and strong teamwork abilities with excellent communication skills</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-item">
+            <h3>Uber Eats</h3>
+            <p>Part Time Delivery Rider</p>
+        </div>
+        <div class="experience-item">
+            <h3>David Pieris Group of Companies</h3>
+            <p>DP Logistics (Pvt) Ltd, Piliyandala</p>
+        </div>
+        <div class="experience-item">
+            <h3>Domino's Pizza</h3>
+            <p>Part Time Delivery Rider, Nugegoda</p>
+        </div>
+        <div class="experience-item">
+            <h3>Ceylinco Life Insurance Limited</h3>
+            <p>Sales representative, Panadura Branch (Pn-05)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <h3>Graphic Design</h3>
+            <p>Oslo Computer College Sri Lanka</p>
+        </div>
+        <div class="education-item">
+            <h3>G.C.E. Advanced Level (2016)</h3>
+            <p>St. John College Panadura</p>
+        </div>
+        <div class="education-item">
+            <h3>G.C.E. Ordinary Level (2013)</h3>
+            <p>St. John College Panadura</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Extra Qualifications</h2>
+        <ul>
+            <li onclick="showDescription(this, 'Certified in Microsoft Office applications, including Word, Excel, and PowerPoint.')">
+                Certified in MS Office applications
+            </li>
+            <li onclick="showDescription(this, 'Advanced skills in HTML, CSS, JavaScript, and responsive design techniques.')">
+                Advanced Web Design and Development skills
+            </li>
+            <li onclick="showDescription(this, 'Experienced in managing social media platforms, creating content, and engaging with audiences.')">
+                Social media content creator & operator
+            </li>
+            <li onclick="showDescription(this, 'Expert-level proficiency in Adobe Photoshop, including all versions.')">
+                Adobe Photoshop Certified (All Versions)
+            </li>
+            <li onclick="showDescription(this, 'Knowledgeable in network security, penetration testing, and cybersecurity best practices.')">
+                Certified in Cyber Security
+            </li>
+            <li onclick="showDescription(this, 'Ethical hacking techniques and information security strategies.')">
+                Certified in Ethical Hacking - Information Security
+            </li>
+            <li onclick="showDescription(this, 'Fundamentals of computer hardware, including assembly, troubleshooting, and repair.')">
+                Basic Computer Hardware Knowledge
+            </li>
+        </ul>
+    </div>
+    
+
+    <div class="section">
+        <h2 class="section-title">References</h2>
+        <div class="reference-item">
+            <h3>K.A. Sugath Ridmal</h3>
+            <p>Union Assurance PLC</p>
+            <p>Assistant Sales Manager</p>
+            <p>Email: sugathridmal@gmail.com</p>
+            <p>Phone: 076-7490230</p>
+        </div>
+        <div class="reference-item">
+            <h3>Pubudu Kavishka</h3>
+            <p>Sri Lanka Army - Ordnance Corps</p>
+            <p>Email: pkavishka73@gmail.com</p>
+            <p>Phone: 075-7324016</p>
+        </div>
+        <div class="reference-item">
+            <h3>K.D. Dulanjaya Promod</h3>
+            <p>Kuruppu Motors - Panadura</p>
+            <p>Email: kuruppumotos.panadura@gmail.com</p>
+            <p>Phone: 071-3906455</p>
+        </div>
+    </div>
+
+    <div class="declaration">
+        "I hereby declare that the information provided in this application form is accurate and complete to the best of my knowledge. I confirm that all details are true and correct, and I accept full responsibility for any discrepancies or errors. I understand the importance of providing honest and reliable information."
+        <div class="declaration">
+            <p>Click the button below to start your download cv as a PDF:</p>
+            <div class="download-button">Download Now</div>
+            <p>You can download the CV file easily,</p>
+            <p>but the problem is the, you Need a password to open it.</p>
+        </div>
+        
+        <style>
+            .declaration {
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
+        
+            .download-button {
+                display: inline-block;
+                padding: 12px 24px;
+                background-color: green;
+                color: red;
+                font-weight: bold;
+                font-size: 18px;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: transform 0.3s, background-color 0.3s;
+                margin: 10px 0;
+            }
+        
+            .download-button:hover {
+                transform: scale(1.1);
+                background-color: darkgreen;
+            }
+        </style>
+    </div>
+</body>
+</html>
