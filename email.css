@@ -1,0 +1,79 @@
+/* Style the input field */
+.custom-email-section input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the button */
+  .custom-email-section button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .custom-email-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Dialog box styling */
+  .dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+  }
+  
+  /* Centering the button */
+  .container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  /* Styling the download button */
+  #downloadBtn {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+    border: 2px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #downloadBtn:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  /* Styling the countdown dialog */
+  #countdownDialog {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color:  #00ff00;
+    padding: 20px;
+    font-size: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  
