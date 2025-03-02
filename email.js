@@ -1,9 +1,12 @@
 // Function to open the email client with the message
 function sendEmail() {
     let message = document.getElementById("message").value;
+    let email = "ldilhare@gmail.com"; // Replace with your email
+    let subject = "Inquiry from Website"; // Default subject
+
     if (message.trim() !== "") {
         // Open default mail client with subject and body
-        window.location.href = `mailto:?subject=New Message&body=${encodeURIComponent(message)}`;
+        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
     }
 }
 
